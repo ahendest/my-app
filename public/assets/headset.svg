@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 1920">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-miterlimit: 10;
+        stroke-width: 150px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #0369a1;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 15;
+        stroke-width: 160px;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="katman_1">
+      <path class="cls-1" d="M211.17,1373.16h0s0-.04,0-.05v-330.68c0-442.11,372.49-793.3,809.13-758.19,81.43,6.55,159.18,26.24,231.18,56.98,268.76,114.74,457.34,383.35,457.34,696.42v327.76s0-31.37,0-31.36v31.4"/>
+      <rect class="cls-2" x="217.17" y="1108.13" width="325.99" height="530.05" rx="61.42" ry="61.42"/>
+      <rect class="cls-2" x="1377.83" y="1108.13" width="325.99" height="530.05" rx="61.42" ry="61.42"/>
+    </g>
+  </g>
+</svg>

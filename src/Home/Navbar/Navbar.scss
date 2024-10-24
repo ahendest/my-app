@@ -1,0 +1,155 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  
+}
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin reset-margin-padding{
+  margin: 0;
+  padding: 0;
+}
+
+/*---COLORS---*/
+$primary-color: #FCD34D;
+
+*{
+  @include reset-margin-padding();
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+ 
+  h1{
+    font-size: 2.5rem;
+  }
+
+  form{
+    @include flex-center();
+    flex-direction: column;
+    position: fixed;
+    background-color: #b68c00;
+    top: 10px;
+    right: -200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    *{color: white;}
+    transition: all 0.3s ease-in-out ;
+    
+    ul{
+      list-style-type: none;
+      padding: 1em;
+      
+      li{
+        margin-bottom: 15px;
+      }
+      
+        li a{
+          text-decoration: none;
+          
+        }
+    }
+    div{
+      *{
+        @include flex-center();
+        cursor: pointer;
+        background: none;
+      }
+      @include flex-center();
+      flex-direction: column;
+      padding: 10px;
+      gap: 20px;
+      button:nth-child(1){
+        flex-direction: column;
+        border: none;
+        img{width: 25px;}  
+      }
+      
+      button:nth-child(2){
+        gap: 10px;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 5px;
+      }
+    }
+  }
+  .open{
+    right: 10px;
+  }
+}
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: auto;
+  cursor: pointer;
+  margin-left: auto;
+  background-color: $primary-color;
+  border-radius: 50%;
+  padding: 0.8em;
+  width: 24px;
+  height: 24px;
+
+
+  span{
+    display: block;
+    width: 24px;
+    height: 2.4px;
+    border-radius: 5px;
+    background-color: #78350F;
+    z-index: 2;
+  }
+
+}
+
+@media(min-width:  600px){
+  .nav{
+    padding: 1em;
+    &__div{
+      
+      display: flex;
+      white-space: nowrap;
+    }
+    form{
+      position: static;
+      flex-direction: row;
+      background: none;
+      *{color: black;}
+      box-shadow: none;
+      
+      ul{
+        display: flex;
+        gap: 20px;
+      }
+      .nav-button-div{
+        flex-direction: row;
+        gap: 20px;
+
+        button:nth-child(1){
+          gap: 10px;
+          flex-direction: row;
+          white-space: nowrap;
+        }
+        
+        button:nth-child(2){
+          white-space: nowrap;
+          border-radius: 30px;
+          border: none;
+          background-color: #FCD34D;
+          color: #78350F;
+          padding: 7px 20px 7px ;
+        }
+      }
+    }
+  }
+  .hamburger{display: none;}
+
+}
+
+
+
