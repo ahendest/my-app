@@ -1,4 +1,6 @@
 import React from 'react'
+import RequestButton from '../RequestButton/RequestButton.tsx';
+import '../RequestButton/RequestButton.scss';
 
 function LandingPage() {
   return (
@@ -9,10 +11,7 @@ function LandingPage() {
       <div className='hero text'>
         <h1>Get the Sun to Power Your Home</h1>
         <p>Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque.</p>
-        <button>
-          Request a Quote
-          <img src="./assets/arrow-right.svg" alt="" />
-        </button>
+        <RequestButton/>
       </div>
       <div className='hero-below'>
         <p className='hero-below text'>

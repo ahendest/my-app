@@ -1,4 +1,5 @@
 @import '../Navbar/Navbar';
+
 .hero{
   position: relative;
   padding-top: 30%;
@@ -20,17 +21,6 @@
       margin-bottom: 30px;
     }
     p{margin: 20px; }
-    button{
-      img{margin-left:15px;}
-      gap: 20px;
-      color: #78350F;
-      font-size: 1.2rem;
-      font-weight: 500;
-      padding: 10px 30px 10px ;
-      border-radius: 30px;
-      border: none;
-      background-color: #FCD34D;
-    }
   }
 }
 .hero-below{
@@ -74,12 +64,14 @@
   .hero{
     position: static;
     padding: 0;
+    
     .img-div{
 
       .img{
         position:absolute;
         top: 0;
         right: -10px;
+        min-width: 400px;
         max-width: 40vw;        
       }
     }

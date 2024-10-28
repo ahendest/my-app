@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
+import RequestButton from '../RequestButton/RequestButton.tsx';
+import '../RequestButton/RequestButton.scss';
 
 function Navbar() {
 
@@ -24,13 +26,11 @@ function Navbar() {
             <button>
               <img src="./assets/headset.svg" alt="" />555 818 282
             </button>
-            <button>
-              Request a Quote <img src="./assets/arrow-right.svg" alt="" />
-            </button>
+            <RequestButton/>
           </div>
         </form>
       </div>
-      <div className='hamburger' onClick={toggleMenu}>
+      <div className='hamburger'id={isMenuOpen ? 'hamburger-open' : ""} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>

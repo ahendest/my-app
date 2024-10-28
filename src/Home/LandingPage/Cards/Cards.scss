@@ -1,0 +1,71 @@
+@import '../../Navbar/Navbar.scss';
+main{
+  background-color: #581C87;
+  height: 100vh;
+  @include flex-center();
+  flex-direction: column;
+  padding: 1em;
+  margin-top: 20px;
+  overflow: hidden;
+  height: fit-content
+}
+.upper-container{
+  @include flex-center();
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  padding: 1em;
+  width: fit-content;
+  gap: 20px;
+  button{margin: 1em; padding: 1em;}
+  p:nth-child(1){color: #FCD34D;}
+}
+.card > div{
+  background-color: white; 
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  @include flex-center();
+  flex-direction: column;
+  img{width: 3rem; margin-right: auto;}
+  p{width: 30ch;}
+  padding: 1em;
+ }
+.card{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  gap: 20px;
+  width: 150%;
+  height: 50%;
+  
+  div{
+   
+  }
+}
+
+.user-card{
+  @include flex-center();
+  text-align: start;
+  flex-direction: row;  
+  margin:0.6em auto auto;
+ img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+ }
+ &.para-div{
+  margin-left: 15px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  p:nth-child(1){
+    font-size: 14px;
+    font-weight: 500;
+  }
+  p:nth-child(2){
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+  }
+ }    
+}
