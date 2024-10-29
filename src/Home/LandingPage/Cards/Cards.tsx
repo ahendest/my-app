@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import RequestButton from '../../RequestButton/RequestButton.tsx';
 import '../../RequestButton/RequestButton.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function Cards() {
+
+  
+
   return (
     <main>
       <div className='upper-container'>
@@ -20,7 +23,9 @@ function Cards() {
       </div>
 
 
-      <Swiper className='card-big-container'
+      <Swiper 
+        className='card-big-container'
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
         direction="horizontal"
         loop={true}
         pagination={{ el: ".swiper-pagination", clickable: true }}
@@ -99,7 +104,7 @@ function Cards() {
 
         <div className='swiper-pagination'></div>
         <div className='buttons'>
-          <div className='swiper-button-next'></div>
+          <div className='swiper-button-next' ></div>
           <div className='swiper-button-prev'></div>
         </div>
         

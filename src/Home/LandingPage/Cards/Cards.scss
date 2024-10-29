@@ -25,13 +25,16 @@ main{
   display: grid;
   grid-template-columns:repeat(4,1fr);
   gap: 20px;
-  width: 70%;
-  display: flex;
+  width: 100%;
+  @include flex-center();
   flex-direction: column;
   .card-container{
     background-color: white; 
     box-shadow: 0 0 10px black;
     border-radius: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     @include flex-center();
     flex-direction: column;
     & > img{width: 3rem; margin-right: auto; padding: 0.4em;}
@@ -40,11 +43,25 @@ main{
    }
    .buttons{}
 }
-.swiper-pagination{
-  width: 16px;
-  height: 16px;
-  background-color: white;
+.swiper-pagination-bullet{
+  background-color: #FCD34D;
+  width: 11px;
+  height: 11px;
+  transition: all 0.3s ease-in-out;
 }
+.swiper-pagination-bullet-active{
+ 
+  width:  16px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: #FCD34D;
+  
+}
+.swiper-button-next::after, .swiper-button-next::after{
+ 
+}
+
 
 .user-card{
   @include flex-center();
@@ -74,4 +91,3 @@ main{
   }
  }    
 }
-
