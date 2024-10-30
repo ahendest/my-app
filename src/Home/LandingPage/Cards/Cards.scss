@@ -17,13 +17,12 @@ main{
   margin-bottom: 2em;
   width: fit-content;
   gap: 20px;
-  button{margin: 1em; padding: 1em;}
+  button{margin: 0.6em; padding: 1em;}
   p:nth-child(1){color: #FCD34D;}
+  .para-div > * {margin-top: 0.7em;}
 }
 
 .card-big-container{
-  display: grid;
-  grid-template-columns:repeat(4,1fr);
   gap: 20px;
   width: 100%;
   @include flex-center();
@@ -41,7 +40,6 @@ main{
     & > p{max-width: 40ch;padding: 0.4em;}
     padding: 1.5em;
    }
-   .buttons{}
 }
 .swiper-pagination-bullet{
   background-color: #FCD34D;
@@ -50,18 +48,14 @@ main{
   transition: all 0.3s ease-in-out;
 }
 .swiper-pagination-bullet-active{
- 
-  width:  16px;
+  height: 13px;
+  width:  20px;
 }
-
+.swiper-pagination-bullet:hover{background-color: white;}
+.swiper-pagination-bullet:active{background-color: #ffc400;}
 .swiper-button-next, .swiper-button-prev{
   color: #FCD34D;
-  
 }
-.swiper-button-next::after, .swiper-button-next::after{
- 
-}
-
 
 .user-card{
   @include flex-center();
@@ -90,4 +84,23 @@ main{
     color: gray;
   }
  }    
+}
+
+@media(min-width:600px){
+  .upper-container {
+    flex-direction: row;
+    text-align: start;
+    .para-div{font-size: smaller;}
+    button{padding: 0.6em; font-size: 1em;}
+  }
+  .card-big-container{
+     
+    .card-container{
+      max-width: fit-content;
+      & > img{}
+      & > p{max-width: 60ch;}
+      
+     }
+
+  }
 }

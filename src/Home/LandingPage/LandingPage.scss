@@ -26,7 +26,7 @@
 .hero-below{
 
   &.text{
-    margin: 100px 20px 50px;
+    margin: 50px 20px auto;
   }
 }
 .user-card{
@@ -35,6 +35,7 @@
   text-align: start;
   flex-direction: row;
   margin-left: 20px;  
+  padding: 1em;
  img{
   width: 60px;
   border-radius: 50%;

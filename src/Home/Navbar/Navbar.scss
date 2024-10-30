@@ -41,6 +41,7 @@ nav{
     *{color: white;}
     transition: all 0.3s ease-in-out ;
     
+    
     ul{
       list-style-type: none;
       padding: 1em;
@@ -112,32 +113,38 @@ nav{
 @media(min-width:  600px){
   .nav{
     padding: 1em;
+    
     &__div{
-      
+      max-width: fit-content;
       display: flex;
-      white-space: nowrap;
+      
     }
+    
     form{
       position: static;
       flex-direction: row;
       background: none;
       *{color: black;}
       box-shadow: none;
-      
+      max-width: fit-content;
       ul{
         display: flex;
         gap: 20px;
       }
       .nav-button-div{
         flex-direction: row;
+        max-width: fit-content;
         gap: 20px;
-
+        @include reset-margin-padding();
         button:nth-child(1){
           gap: 10px;
           flex-direction: row;
           white-space: nowrap;
+          font-size: 1em;
+          @include reset-margin-padding();
+          img{width: 20px;}
         }
-        
+        button:nth-child(2){gap: 0; font-size: 0.8em; max-width: 20vw; margin: 0;}
     
       }
     }

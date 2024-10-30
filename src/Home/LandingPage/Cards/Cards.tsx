@@ -14,12 +14,16 @@ function Cards() {
   return (
     <main>
       <div className='upper-container'>
-        <p>Join other Sun harvesters</p>
-        <h1>Make something awesome</h1>
-        <p>
-          Dui euismod iaculis libero, aliquet vitae et elementum porttitor. Eleifend mi tristique condimentum congue fusce nunc, donec magnis commodo.
-        </p>
-        <RequestButton />
+        <div className='para-div'>
+          <p>Join other Sun harvesters</p>
+          <h1>Make something awesome</h1>
+          <p>
+            Dui euismod iaculis libero, aliquet vitae et elementum porttitor. Eleifend mi tristique condimentum congue fusce nunc, donec magnis commodo.
+          </p>
+        </div>
+        <div>
+          <RequestButton />
+        </div>
       </div>
 
 

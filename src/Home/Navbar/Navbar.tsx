@@ -24,17 +24,18 @@ function Navbar() {
           </ul>
           <div className='nav-button-div'>
             <button>
-              <img src="./assets/headset.svg" alt="" />555 818 282
+              <img src="./assets/headset.svg" alt="" />
+              555 818 282
             </button>
-            <RequestButton/>
+            <RequestButton />
           </div>
         </form>
       </div>
-      <div className='hamburger'id={isMenuOpen ? 'hamburger-open' : ""} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <div className='hamburger' id={isMenuOpen ? 'hamburger-open' : ""} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   )
 }
